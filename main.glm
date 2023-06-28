@@ -97,7 +97,7 @@ clock
 
 
 // Task 7 - Plot output data from building 1 and 2
-#plot -i=building_1.csv -o=building_1.png --plot:grid
+#on_exit 0 gridlabd plot -i=building_1.csv -o=building_1.png --plot:grid
 #on_exit 0 gridlabd plot -i=building_2.csv -o=building_2.png --plot:grid
 
 #output "IEEE-123-voltage-profile.png" -t profile -l 10
